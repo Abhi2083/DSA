@@ -28,11 +28,7 @@ int main()
     // p = p + 1; // points to the next location ex- in case of int if addresss is 100 then it points to 104
     // cout << p << endl;
 
-    float f = 10.5;
-    float p = 2.5;
-    float * ptr = &f;
-    (*ptr)++;
-    *ptr = p;
-    cout << *ptr << " "<< f << " "<< p;
+    int a[3] = {1, 2, 3};
+    cout << *(a + 2);
     return 0;
 }
