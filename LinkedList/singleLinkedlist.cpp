@@ -96,7 +96,7 @@ int main()
 
     // insertAtTail(tail, 90);
     // print(head);
-    // print(tail);    //prints only one node beacuse of singlly linkedlist.
+    // print(tail);    
 
     insertAtPosition(head,tail, 6, 7);
     print(head);
