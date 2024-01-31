@@ -21,25 +21,41 @@ void insertAtBegining(Node *&head, int d)
     head = temp;
 }
 
-void print(Node* &head){
-    Node* temp = head;
-    while(temp != NULL){
+void insertAtEnd(Node *&tail, int d)
+{
+    Node *temp = new Node(d);
+    tail -> next= temp;
+    tail = temp;
+}
+
+void print(Node *&head)
+{
+    Node *temp = head;
+    while (temp != NULL)
+    {
         cout << temp->data << " ";
         temp = temp->next;
     }
-    cout<<endl;
+    cout << endl;
 }
 
-int main(){
-    Node* node1 = new Node(1); 
-    print(node1);
-    insertAtBegining(node1,2);
-    print(node1);
-    insertAtBegining(node1,3);
-    print(node1);
-    insertAtBegining(node1,4);
-    print(node1);
-    insertAtBegining(node1,5);
-    print(node1);
-    insertAtBegining(node1,6);
+int main()
+{
+    Node *node1 = new Node(1);
+    Node *head = node1;
+    Node *tail = node1;
+    print(head);
+    insertAtBegining(head, 2);
+    print(head);
+    insertAtBegining(head, 3);
+    print(head);
+    insertAtBegining(head, 4);
+    print(head);
+    insertAtEnd(tail, 0);
+    print(tail);
+    insertAtBegining(head, 5);
+    print(head);
+    insertAtBegining(head, 6);
+    print(head);
+    
 }
