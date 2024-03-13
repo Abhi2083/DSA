@@ -28,6 +28,9 @@ void insertAtEnd(Node *&tail, int d)
     tail = temp;
 }
 
+void del (Node *& head, int pos){
+    
+}
 void print(Node *&head)
 {
     Node *temp = head;

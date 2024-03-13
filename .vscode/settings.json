@@ -5,7 +5,8 @@
         "*.tcc": "cpp",
         "initializer_list": "cpp",
         "array": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "new": "cpp"
     },
     "C_Cpp.errorSquiggles": "EnabledIfIncludesResolve",
     "files.autoSave": "afterDelay",

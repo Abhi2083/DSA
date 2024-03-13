@@ -89,7 +89,7 @@ void deleteNode(LinkedlistNode *&head, int position)
         }
 
         prev->next= curr->next;
-        delete curr;
+        // delete curr;
 
     }
 }
