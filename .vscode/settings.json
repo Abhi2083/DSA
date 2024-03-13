@@ -10,5 +10,7 @@
     },
     "C_Cpp.errorSquiggles": "EnabledIfIncludesResolve",
     "files.autoSave": "afterDelay",
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "editor.mouseWheelZoom": true,
+    "terminal.integrated.mouseWheelZoom": true
 }

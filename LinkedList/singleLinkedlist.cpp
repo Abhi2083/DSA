@@ -140,6 +140,6 @@ int main()
     insertAtPosition(head, tail, 6, 7);
     print(head);
 
-    deleteNode(head,0);
+    deleteNode(head,4);
     print(head); 
 }
