@@ -82,7 +82,7 @@ void deleteNode(LinkedlistNode *&head, int position)
         LinkedlistNode* curr = head;
         LinkedlistNode* prev = NULL;
         int cnt = 1;
-        while(cnt <= position){
+        while(cnt < position){
             prev = curr;
             curr = curr ->next;
             cnt++;
@@ -140,6 +140,6 @@ int main()
     insertAtPosition(head, tail, 6, 7);
     print(head);
 
-    deleteNode(head,4);
+    deleteNode(head,6);
     print(head); 
 }
