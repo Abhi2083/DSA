@@ -87,10 +87,14 @@ void deleteNode(LinkedlistNode *&head, int position)
             curr = curr ->next;
             cnt++;
         }
+        if(curr->next = NULL){
+            prev->next = NULL;
+        }else{
+            prev->next= curr->next;
 
-        prev->next= curr->next;
+        }
         // delete curr;
-
+        delete(curr);
     }
 }
 void print(LinkedlistNode *&head)
@@ -124,22 +128,25 @@ int main()
     insertAtHead(head, 15);
     print(head);
 
-    // insertAtTail(tail, 60);
-    // print(head);
+    insertAtTail(tail, 60);
+    print(head);
 
-    // insertAtTail(tail, 70);
-    // print(head);
+    insertAtTail(tail, 70);
+    print(head);
 
-    // insertAtTail(tail, 80);
-    // print(head);
+    insertAtTail(tail, 80);
+    print(head);
 
-    // insertAtTail(tail, 90);
-    // print(head);
-    // print(tail);
+    insertAtTail(tail, 90);
+    print(head);
+    print(tail);
 
     insertAtPosition(head, tail, 6, 7);
     print(head);
 
-    deleteNode(head,6);
+    deleteNode(head,10);
     print(head); 
+    
+    cout<< "tail:-"<<endl;
+    print(tail);
 }
