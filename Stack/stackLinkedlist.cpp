@@ -30,8 +30,8 @@ void pop()
     }
     else
     {
-        top = top -> next;
-        free(temp); 
+        top = top->next;
+        free(temp);
     }
 }
 
